@@ -1,11 +1,10 @@
 pipeline{
   agent any
   stages{
-   stage('java build'){
+   stage('node build'){
   steps{
 sh '''
-javac HelloWorld.java
-java HelloWorld
+node sample.js
 '''
   }
 }
