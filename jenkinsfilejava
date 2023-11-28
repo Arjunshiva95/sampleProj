@@ -1,0 +1,14 @@
+pipeline{
+  agent any
+  stages{
+   stage('java build'){
+  steps{
+sh '''
+javac HelloWorld.java
+java HelloWorld
+'''
+  }
+}
+  }
+
+}
