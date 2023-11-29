@@ -4,7 +4,7 @@ pipeline{
    stage('node build'){
   steps{
 sh '''
-node sample.js
+./node.sh
 '''
   }
 }
