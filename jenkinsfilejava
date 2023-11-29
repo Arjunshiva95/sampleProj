@@ -4,8 +4,7 @@ pipeline{
    stage('java build'){
   steps{
 sh '''
-javac HelloWorld.java
-java HelloWorld
+python pysample.py
 '''
   }
 }
